@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Tr May Myat Hmuu Aung! ✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Great+Vibes&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --aquarius-blue: #1a8cff;
+            --aquarius-light: #66b3ff;
+            --aquarius-dark: #0066cc;
+            --aquarius-sparkle: #80d4ff;
+            --aquarius-purple: #b366ff;
+            --sparkle-gold: #ffd700;
+            --sparkle-pink: #ff66b3;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        .sparkle-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -2;
+            overflow: hidden;
+        }
+        
+        .sparkle {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: sparkle 3s infinite alternate;
+        }
+        
+        @keyframes sparkle {
+            0% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0; transform: scale(0); }
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+        
+        .birthday-title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 5.5rem;
+            background: linear-gradient(to right, #80d4ff, #b366ff, #ff66b3, #ffd700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(128, 212, 255, 0.5);
+            animation: titleGlow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes titleGlow {
+            from { text-shadow: 0 0 10px rgba(128, 212, 255, 0.5), 0 0 20px rgba(179, 102, 255, 0.3); }
+            to { text-shadow: 0 0 20px rgba(128, 212, 255, 0.8), 0 0 30px rgba(179, 102, 255, 0.5), 0 0 40px rgba(255, 102, 179, 0.3); }
+        }
+        
+        .name-highlight {
+            font-family: 'Parisienne', cursive;
+            font-size: 3.5rem;
+            color: #80d4ff;
+            text-shadow: 0 0 15px rgba(128, 212, 255, 0.8);
+            margin: 10px 0;
+            animation: namePulse 2s infinite;
+        }
+        
+        @keyframes namePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: #b3e0ff;
+            margin-bottom: 30px;
+            font-weight: 300;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+        
+        .heart {
+            color: #ff66b3;
+            animation: heartbeat 1.5s ease-in-out infinite both;
+            display: inline-block;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+        
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: rgba(0, 30, 60, 0.7);
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            transition: transform 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(128, 212, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, #80d4ff, #b366ff, #ff66b3);
+        }
+        
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(128, 212, 255, 0.3);
+        }
+        
+        .message-card {
+            position: relative;
+        }
+        
+        .card-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.8rem;
+            color: #80d4ff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .message {
+            line-height: 1.8;
+            font-size: 1.2rem;
+            color: #e6f7ff;
+        }
+        
+        .birthday-wish {
+            background: linear-gradient(120deg, rgba(128, 212, 255, 0.2) 0%, rgba(179, 102, 255, 0.2) 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 20px;
+            font-style: italic;
+            position: relative;
+            border-left: 5px solid #ff66b3;
+        }
+        
+        .birthday-wish::before {
+            content: "\f10d";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            color: #ff66b3;
+            opacity: 0.7;
+            font-size: 2rem;
+        }
+        
+        .photo-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .photo-frame {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 10px solid transparent;
+            background: linear-gradient(45deg, #80d4ff, #b366ff, #ff66b3, #ffd700) border-box;
+            box-shadow: 0 0 30px rgba(128, 212, 255, 0.7), 0 0 60px rgba(179, 102, 255, 0.5);
+            margin-bottom: 30px;
+            animation: frameGlow 4s infinite alternate;
+        }
+        
+        @keyframes frameGlow {
+            0% { box-shadow: 0 0 30px rgba(128, 212, 255, 0.7), 0 0 60px rgba(179, 102, 255, 0.5); }
+            100% { box-shadow: 0 0 40px rgba(128, 212, 255, 0.9), 0 0 80px rgba(179, 102, 255, 0.7), 0 0 100px rgba(255, 102, 179, 0.5); }
+        }
+        
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        /* STUDENTS SECTION */
+        .students-section {
+            width: 100%;
+            margin: 60px 0;
+        }
+        
+        .students-title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            text-align: center;
+            color: #80d4ff;
+            margin-bottom: 30px;
+            text-shadow: 0 0 15px rgba(128, 212, 255, 0.7);
+        }
+        
+        .students-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        .student-card {
+            background: rgba(0, 40, 80, 0.8);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .student-card:hover {
+            transform: translateY(-10px);
+            border-color: #80d4ff;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(128, 212, 255, 0.4);
+        }
+        
+        .student-card::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 40px;
+            height: 40px;
+            background: #ffd700;
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+        
+        .student-icon {
+            font-size: 2.5rem;
+            color: #80d4ff;
+            margin-bottom: 15px;
+        }
+        
+        .student-name {
+            font-size: 1.4rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .student-wish {
+            font-size: 1rem;
+            color: #e6f7ff;
+            line-height: 1.6;
+            font-style: italic;
+        }
+        
+        /* CANDLE SECTION - EXTRA AMAZING */
+        .candle-section {
+            width: 100%;
+            margin: 60px 0;
+            text-align: center;
+        }
+        
+        .candle-title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: #ffd700;
+            margin-bottom: 40px;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+        }
+        
+        .candle-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(0, 20, 40, 0.7);
+            border-radius: 30px;
+            border: 2px solid rgba(128, 212, 255, 0.5);
+            box-shadow: 0 0 50px rgba(128, 212, 255, 0.3);
+        }
+        
+        .candle-wrapper {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        
+        .candle {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 250px;
+            background: linear-gradient(to right, #80d4ff, #66b3ff, #1a8cff);
+            border-radius: 40px 40px 0 0;
+            box-shadow: 
+                inset 0 -20px 30px rgba(0, 0, 0, 0.3),
+                0 10px 20px rgba(0, 0, 0, 0.5),
+                0 0 30px rgba(26, 140, 255, 0.7);
+            z-index: 2;
+        }
+        
+        .candle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 30px;
+            background: linear-gradient(to right, #ffd700, #ffed99);
+            border-radius: 40px 40px 0 0;
+            z-index: 3;
+        }
+        
+        .candle::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 10px;
+            right: 10px;
+            height: 20px;
+            background: linear-gradient(to right, #b366ff, #9966ff);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .flame {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 120px;
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.9), #ffd700, #ff9900, #ff3300);
+            border-radius: 50% 50% 20% 20%;
+            box-shadow: 
+                0 0 40px rgba(255, 215, 0, 0.9),
+                0 0 80px rgba(255, 153, 0, 0.7),
+                0 0 120px rgba(255, 102, 0, 0.5);
+            animation: flameFlicker 0.5s infinite alternate, flameGlow 2s infinite alternate;
+            z-index: 4;
+            display: none;
+        }
+        
+        @keyframes flameFlicker {
+            0%, 100% { transform: translateX(-50%) scale(1); height: 120px; }
+            50% { transform: translateX(-50%) scale(1.05, 0.95); height: 110px; }
+        }
+        
+        @keyframes flameGlow {
+            0% { box-shadow: 0 0 40px rgba(255, 215, 0, 0.9), 0 0 80px rgba(255, 153, 0, 0.7), 0 0 120px rgba(255, 102, 0, 0.5); }
+            100% { box-shadow: 0 0 50px rgba(255, 215, 0, 1), 0 0 100px rgba(255, 153, 0, 0.8), 0 0 150px rgba(255, 102, 0, 0.6); }
+        }
+        
+        .sparks {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 5;
+        }
+        
+        .spark {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background-color: #ffd700;
+            border-radius: 50%;
+            animation: sparkRise 2s linear infinite;
+        }
+        
+        @keyframes sparkRise {
+            0% { transform: translateY(0) scale(0); opacity: 0; }
+            10% { opacity: 1; transform: translateY(-10px) scale(1); }
+            100% { transform: translateY(-200px) scale(0); opacity: 0; }
+        }
+        
+        .candle-btn {
+            background: linear-gradient(to right, #80d4ff, #b366ff);
+            color: white;
+            border: none;
+            padding: 18px 35px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            margin-top: 40px;
+            box-shadow: 0 10px 25px rgba(128, 212, 255, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .candle-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(128, 212, 255, 0.7), 0 0 40px rgba(179, 102, 255, 0.5);
+        }
+        
+        .candle-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: 0.5s;
+        }
+        
+        .candle-btn:hover::before {
+            left: 100%;
+        }
+        
+        .signature {
+            font-family: 'Parisienne', cursive;
+            font-size: 2.8rem;
+            color: #ff66b3;
+            margin-top: 30px;
+            text-align: right;
+            text-shadow: 0 0 10px rgba(255, 102, 179, 0.7);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #b3e0ff;
+            font-size: 1rem;
+            border-top: 1px solid rgba(128, 212, 255, 0.3);
+            margin-top: 50px;
+        }
+        
+        .secret-message {
+            opacity: 0;
+            transition: opacity 1.5s;
+            background: rgba(0, 30, 60, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .secret-message::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, #80d4ff, #b366ff, #ff66b3, #ffd700);
+        }
+        
+        .secret-message.show {
+            opacity: 1;
+        }
+        
+        .fireworks {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        @media (max-width: 768px) {
+            .birthday-title {
+                font-size: 4rem;
+            }
+            
+            .name-highlight {
+                font-size: 2.5rem;
+            }
+            
+            .card {
+                min-width: 100%;
+            }
+            
+            .students-container {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            
+            .candle-wrapper {
+                width: 250px;
+                height: 350px;
+            }
+            
+            .candle {
+                width: 60px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sparkle-bg" id="sparkleBg"></div>
+    <div class="fireworks" id="fireworks"></div>
+    
+    <div class="container">
+        <header>
+            <h1 class="birthday-title">Happy Birthday!</h1>
+            <div class="name-highlight">Tr May Myat Hmuu Aung</div>
+            <p class="subtitle">May your special day shine as bright as the stars and be filled with all the joy you bring to others. Wishing you endless laughter, love, and beautiful moments today and always! <span class="heart">✨</span></p>
+        </header>
+        
+        <div class="main-content">
+            <div class="card message-card">
+                <h2 class="card-title">From Charli to You</h2>
+                <div class="message">
+                    <p>Dear Tr May Myat Hmuu Aung,</p>
+                    
+                    <p>On this incredible day that marks your birth, I wanted to create something magical just for you. You're someone truly special who deserves all the happiness in the universe.</p>
+                    
+                    <div class="birthday-wish">
+                        "May your path be illuminated with joy, your heart be filled with love, and your spirit soar higher than you've ever dreamed. You are a shining star in the lives of everyone who knows you."
+                    </div>
+                    
+                    <p>Your kindness, intelligence, and radiant energy make the world a better place. I feel so fortunate to know you and celebrate this day with you.</p>
+                    
+                    <p>Here's to a year of incredible adventures, dreams coming true, and memories that will last a lifetime.</p>
+                    
+                    <div class="signature">- Charli</div>
+                </div>
+            </div>
+            
+            <div class="card photo-card">
+                <h2 class="card-title">For The Amazing You</h2>
+                <div class="photo-frame">
+                    <!-- Placeholder for Tr May's photo -->
+                    <div style="width:100%; height:100%; background: linear-gradient(135deg, #80d4ff 0%, #b366ff 100%); display: flex; align-items: center; justify-content: center; font-size: 5rem; color: white;">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                </div>
+                <p style="text-align: center; font-size: 1.4rem; color: #ffd700;">
+                    <i class="fas fa-star" style="color: #ffd700;"></i>
+                    May your year be as extraordinary as you are!
+                    <i class="fas fa-star" style="color: #ffd700;"></i>
+                </p>
+                <p style="text-align: center; margin-top: 15px; color: #b3e0ff;">
+                    An Aquarius queen deserves a birthday as unique and wonderful as she is!
+                </p>
+            </div>
+        </div>
+        
+        <!-- 15 STUDENTS SECTION -->
+        <div class="students-section">
+            <h2 class="students-title">Birthday Wishes from Friends</h2>
+            <div class="students-container" id="studentsContainer">
+                <!-- Student wishes will be added by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- EXTRAORDINARY CANDLE SECTION -->
+        <div class="candle-section">
+            <h2 class="candle-title">Make a Birthday Wish!</h2>
+            <div class="candle-container">
+                <div class="candle-wrapper">
+                    <div class="candle"></div>
+                    <div class="flame" id="flame"></div>
+                    <div class="sparks" id="sparksContainer"></div>
+                </div>
+                <button class="candle-btn" id="lightCandle">Light Tr May's Birthday Candle! ✨</button>
+                <p style="margin-top: 20px; color: #b3e0ff; font-size: 1.2rem;">
+                    Light the candle, make a wish, and watch the magic unfold!
+                </p>
+            </div>
+        </div>
+        
+        <!-- SECRET MESSAGE -->
+        <div class="secret-message" id="secretMessage">
+            <h3 style="color: #80d4ff; margin-bottom: 15px; text-align: center; font-size: 2.2rem;">A Special Secret Just For You...</h3>
+            <p style="font-style: italic; text-align: center; line-height: 1.8; font-size: 1.3rem; color: #e6f7ff;">
+                Tr May Myat Hmuu Aung, you have a magical way of making ordinary moments feel extraordinary. 
+                Your kindness, intelligence, and beautiful spirit inspire everyone around you. 
+                On your birthday, I hope you realize just how incredible you truly are.
+            </p>
+            <p style="text-align: center; margin-top: 25px; font-weight: 600; color: #ffd700; font-size: 1.4rem;">
+                May this year bring you closer to your dreams than ever before!
+            </p>
+            <div class="signature" style="text-align: center; margin-top: 30px;">With love, Charli</div>
+        </div>
+        
+        <footer>
+            <p>Created with <span class="heart">❤️</span> by Charli for Tr May Myat Hmuu Aung's extraordinary birthday</p>
+            <p style="margin-top: 10px;">May your day be filled with sparkle, joy, and magical moments!</p>
+        </footer>
+    </div>
+
+    <script>
+        // Create background sparkles
+        function createSparkles() {
+            const sparkleBg = document.getElementById('sparkleBg');
+            const colors = ['#80d4ff', '#b366ff', '#ff66b3', '#ffd700', '#ffffff'];
+            
+            for (let i = 0; i < 100; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.width = Math.random() * 8 + 2 + 'px';
+                sparkle.style.height = sparkle.style.width;
+                sparkle.style.left = Math.random() * 100 + '%';
+                sparkle.style.top = Math.random() * 100 + '%';
+                sparkle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                sparkle.style.animationDelay = Math.random() * 5 + 's';
+                sparkle.style.animationDuration = Math.random() * 3 + 2 + 's';
+                sparkleBg.appendChild(sparkle);
+            }
+        }
+        
+        // Create 15 student birthday wishes
+        const studentWishes = [
+            { name: "Charli", wish: "Happy Birthday! May your day be as bright as your smile!" },
+            { name: "Charli", wish: "Wishing you endless joy and success in everything you do!" },
+            { name: "Charli", wish: "Hope your birthday is filled with magical moments and happiness!" },
+            { name: "Charlri", wish: "You're an amazing person! Have the most wonderful birthday!" },
+            { name: "Charli", wish: "May all your birthday wishes come true this year!" },
+            { name: "Charli", wish: "Sending you lots of love and good vibes on your special day!" },
+            { name: "Charli", wish: "Your kindness inspires us all. Have a fantastic birthday!" },
+            { name: "Charli", wish: "Hope your birthday is as extraordinary as you are!" },
+            { name: "Charli", wish: "Wishing you a day filled with laughter and beautiful surprises!" },
+            { name: "Charli", wish: "May this year bring you closer to all your dreams!" },
+            { name: "Charli", wish: "You deserve the world! Happy Birthday to an incredible person!" },
+            { name: "Charli", wish: "Your positive energy is contagious. Have an amazing birthday!" },
+            { name: "Charli", wish: "Wishing you health, happiness, and endless adventures!" },
+            { name: "Charli", wish: "May your birthday sparkle as much as you do!" },
+            { name: "Charli", wish: "Hope your special day is filled with love and wonderful memories!" }
+        ];
+        
+        function createStudentCards() {
+            const container = document.getElementById('studentsContainer');
+            const icons = ['fa-star', 'fa-heart', 'fa-gem', 'fa-crown', 'fa-sun', 'fa-moon', 'fa-music', 'fa-magic', 'fa-sparkles', 'fa-fire', 'fa-feather', 'fa-leaf', 'fa-water', 'fa-cloud', 'fa-rainbow'];
+            
+            studentWishes.forEach((student, index) => {
+                const card = document.createElement('div');
+                card.className = 'student-card';
+                card.innerHTML = `
+                    <div class="student-icon">
+                        <i class="fas ${icons[index]}"></i>
+                    </div>
+                    <div class="student-name">${student.name}</div>
+                    <div class="student-wish">"${student.wish}"</div>
+                `;
+                container.appendChild(card);
+            });
+        }
+        
+        // Create candle sparks
+        function createSparks() {
+            const sparksContainer = document.getElementById('sparksContainer');
+            sparksContainer.innerHTML = '';
+            
+            for (let i = 0; i < 30; i++) {
+                const spark = document.createElement('div');
+                spark.className = 'spark';
+                spark.style.left = Math.random() * 100 + '%';
+                spark.style.animationDelay = Math.random() * 2 + 's';
+                spark.style.animationDuration = Math.random() * 2 + 1 + 's';
+                sparksContainer.appendChild(spark);
+            }
+        }
+        
+        // Candle lighting functionality
+        const lightCandleBtn = document.getElementById('lightCandle');
+        const flame = document.getElementById('flame');
+        let candleLit = false;
+        
+        lightCandleBtn.addEventListener('click', function() {
+            if (!candleLit) {
+                // Light the candle
+                flame.style.display = 'block';
+                createSparks();
+                lightCandleBtn.textContent = 'Make a Wish Tr May Myat Hmuu Aung! ✨';
+                lightCandleBtn.style.background = 'linear-gradient(to right, #ff66b3, #ffd700)';
+                candleLit = true;
+                createFireworks();
+                
+                // Add sparkles around candle
+                setInterval(() => {
+                    if (candleLit) createSparks();
+                }, 2000);
+            } else {
+                // Blow out the candle
+                flame.style.display = 'none';
+                lightCandleBtn.textContent = 'Your Wish is Granted! 🎂✨';
+                lightCandleBtn.style.background = 'linear-gradient(to right, #ffd700, #80d4ff)';
+                lightCandleBtn.disabled = true;
+                
+                // Create massive celebration effect
+                createFireworks(50);
+                setTimeout(() => {
+                    document.getElementById('secretMessage').classList.add('show');
+                    createFireworks(30);
+                }, 1000);
+                
+                // Add congratulatory message
+                setTimeout(() => {
+                    const message = document.createElement('div');
+                    message.style.cssText = `
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: rgba(0, 0, 0, 0.9);
+                        color: #ffd700;
+                        padding: 30px;
+                        border-radius: 20px;
+                        font-size: 2.5rem;
+                        text-align: center;
+                        z-index: 1000;
+                        border: 3px solid #80d4ff;
+                        box-shadow: 0 0 50px rgba(128, 212, 255, 0.8);
+                        animation: fadeInOut 5s forwards;
+                    `;
+                    message.innerHTML = `🎉 Happy Birthday Tr May Myat Hmuu Aung! 🎉<br><div style="font-size: 1.5rem; margin-top: 15px; color: #ff66b3;">Your wish is on its way!</div>`;
+                    document.body.appendChild(message);
+                    
+                    // Add CSS for animation
+                    const style = document.createElement('style');
+                    style.textContent = `
+                        @keyframes fadeInOut {
+                            0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+                            20% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+                            30%, 70% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+                            100% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                    
+                    // Remove message after animation
+                    setTimeout(() => {
+                        if (message.parentNode) {
+                            message.parentNode.removeChild(message);
+                        }
+                    }, 5000);
+                }, 500);
+            }
+        });
+        
+        // Create fireworks effect
+        function createFireworks(count = 20) {
+            const fireworksContainer = document.getElementById('fireworks');
+            const colors = ['#80d4ff', '#b366ff', '#ff66b3', '#ffd700', '#ffffff'];
+            
+            for (let i = 0; i < count; i++) {
+                setTimeout(() => {
+                    const firework = document.createElement('div');
+                    firework.style.position = 'absolute';
+                    firework.style.width = '10px';
+                    firework.style.height = '10px';
+                    firework.style.borderRadius = '50%';
+                    firework.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    firework.style.left = Math.random() * 100 + 'vw';
+                    firework.style.top = Math.random() * 100 + 'vh';
+                    firework.style.boxShadow = '0 0 20px currentColor';
+                    fireworksContainer.appendChild(firework);
+                    
+                    // Animate the firework
+                    firework.animate([
+                        { transform: 'scale(0.5)', opacity: 1 },
+                        { transform: 'scale(3)', opacity: 0 }
+                    ], {
+                        duration: 1200,
+                        easing: 'ease-out'
+                    });
+                    
+                    // Remove firework after animation
+                    setTimeout(() => {
+                        if (firework.parentNode) {
+                            firework.parentNode.removeChild(firework);
+                        }
+                    }, 1200);
+                }, i * 100);
+            }
+        }
+        
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            createSparkles();
+            createStudentCards();
+            
+            // Initially hide the flame
+            flame.style.display = 'none';
+            
+            // Add some initial fireworks
+            setTimeout(() => {
+                createFireworks(10);
+            }, 1000);
+            
+            // Add floating animation to student cards
+            const studentCards = document.querySelectorAll('.student-card');
+            studentCards.forEach((card, index) => {
+                card.style.animation = `float ${3 + Math.random() * 2}s ease-in-out infinite`;
+                card.style.animationDelay = `${index * 0.2}s`;
+            });
+            
+            // Add CSS for floating animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes float {
+                    0%, 100% { transform: translateY(0px); }
+                    50% { transform: translateY(-15px); }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
